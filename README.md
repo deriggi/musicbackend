@@ -11,6 +11,7 @@ ___
 
 ## Application
 The application is a Spring Boot system using Jpa crud repositories. Controllers are the api-facing element and are serviced by the ```Services`` which extract data from the H2 in memory database
+
 ### Architecture Diagram
 ![arch](arch.png)
 
