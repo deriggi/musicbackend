@@ -1,5 +1,6 @@
 # Music Back-End
-This is the repository for the backend of the music catalog. To run the application simply run the Application.java class.
+This is the repository for the backend of the music catalog. To run the application simply run the ```Application.java``` class. This application can be paired with the [music front end](https://github.com/deriggi/musicfront) React application which makes use of the search function.
+
 This is Spring Boot application with a dead simple data model:
 
 ## Endpoints
