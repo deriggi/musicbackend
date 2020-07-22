@@ -7,6 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 public interface TrackDao extends CrudRepository<Track, Integer> {
 
     List<Track> findByTitle(String title);
-    List<Track> findByTitleContaining(String titlePart);
+    List<Track> findByTitleContainingIgnoreCase(String titlePart);
     
 }
