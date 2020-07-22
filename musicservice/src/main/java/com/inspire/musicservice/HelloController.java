@@ -20,6 +20,9 @@ public class HelloController {
     @Autowired
     private AlbumService albumService;
 
+    @Autowired
+    private TrackService trackService;
+
     @CrossOrigin(origins = "http://localhost:1234")
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
 	public ResponseEntity<?> getArtists() throws Exception {
@@ -31,7 +34,8 @@ public class HelloController {
 	public ResponseEntity<?> search(@PathVariable("term") String term) throws Exception {
         
         List<? extends MusicElement> combined = union(artistService.findByNameContaining(term), albumService.findByTitleContaining(term));
-	    return ResponseEntity.ok( combined );
+        List<? extends MusicElement> combinedFinal = union(combined, trackService.findByTitleContainingIgnoreCase(term));
+        return ResponseEntity.ok( combinedFinal );
     }
 
    private  <E> List<E> union(List<? extends E> a,List<? extends E> b){
