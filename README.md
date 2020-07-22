@@ -4,3 +4,5 @@ It is a Spring Boot application with a dead simple data model:
 
 ![data model](dbdiagram.png)
 
+![arch](arch.png)
+
