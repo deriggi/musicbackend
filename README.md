@@ -10,8 +10,8 @@ The data model is a simple structure in which an ```Artist``` can have many ```A
 ___
 
 ## Application
-The application is a Spring Boot system using Jpa crud repositories. Controllers are the api-facing element and are serviced by the ```Services`` which extract data from the H2 in memory database
+The application is a Spring Boot system using Jpa crud repositories. Controllers are the api-facing element and are serviced by the ```Services``` which extract data from the H2 in memory database
 
 ### Architecture Diagram
-![arch](arch.png)
+![arch](arch2.png)
 
